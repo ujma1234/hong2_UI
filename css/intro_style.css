@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -10,6 +11,47 @@ ul, ol, li {
 
 a {
   text-decoration: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+body .bg {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: rgb(81, 108, 205);
+}
+body .bg a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #888;
+}
+body .bg a .hong2 {
+  width: 50vh;
+  height: 50vh;
+  top: 50%;
+  left: 50%;
+  margin-top: -25vh;
+  margin-left: -25vh;
+  position: absolute;
+}
+body .bg a .hong2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body .bg a p {
+  top: 50%;
+  left: 50%;
+  margin-top: 30vh;
+  margin-left: -30vh;
+  position: absolute;
+  color: #000;
+  font: 7vh Jua;
 }
 
 /*# sourceMappingURL=intro_style.css.map */
