@@ -1,155 +1,77 @@
-@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 * {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-ul, ol, li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  width: 100vw;
-  height: 100vh;
-}
-body .bg {
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  background: #b1e1e2;
-}
-body .bg a {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  text-decoration: none;
-}
-body .bg a .hong2 {
-  width: 50vh;
-  height: 50vh;
-  top: 50%;
-  left: 50%;
-  margin-top: -25vh;
-  margin-left: -25vh;
-  position: absolute;
-}
-body .bg a .hong2 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-body .bg a .offhong2 {
-  width: 50vh;
-  height: 50vh;
-  top: 50%;
-  left: 50%;
-  margin-top: -25vh;
-  margin-left: -25vh;
-  position: absolute;
-  animation: swashOut 2s;
-  opacity: 0;
-}
-body .bg a .intro_text {
-  top: 50%;
-  left: 50%;
-  margin-top: 30vh;
-  margin-left: -30vh;
-  position: absolute;
-  color: #000;
-  font: 7vh Jua;
-  animation: smashing linear 7s infinite;
-}
-body .bg a .close_text {
-  top: 50%;
-  left: 50%;
-  margin-top: 30vh;
-  margin-left: -30vh;
-  position: absolute;
-  color: #000;
-  font: 7vh Jua;
-  animation: swashOut 2s;
-  opacity: 0;
-}
-
-@keyframes smashing {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes sky {
-  0% {
-    background: #b08fcc;
-  }
-  25% {
+#wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    position: relative;
     background: #b1e1e2;
+    animation: bg 25s linear infinite paused;
+}
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  background: #b1e1e2;
+  background-size: 400% 100%;
+  animation: bg 20s infinite;
+}
+
+@keyframes bg {
+  0% {
+      background-position: 0% 50%;
   }
+
   50% {
-    background: #fcd2e2;
+      background-position: 100% 50%;
   }
-  75% {
-    background: #636888;
-  }
+
   100% {
-    background: #b08fcc;
-  }
-}
-@-webkit-keyframes swashOut {
-  0% {
-    opacity: 1;
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-  }
-  80% {
-    opacity: 1;
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    -webkit-transform: scale(0.9, 0.9);
-    transform: scale(0.9, 0.9);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    -webkit-transform: scale(0, 0);
-    transform: scale(0, 0);
-  }
-}
-@keyframes swashOut {
-  0% {
-    opacity: 1;
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-  }
-  80% {
-    opacity: 1;
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    -webkit-transform: scale(0.9, 0.9);
-    transform: scale(0.9, 0.9);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    -webkit-transform: scale(0, 0);
-    transform: scale(0, 0);
+      background-position: 0% 50%;
   }
 }
 
-/*# sourceMappingURL=intro_style.css.map */
+/* === SVG === */
+svg {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+}
+
+svg polygon {
+  position: absolute;
+}
+
+svg polygon.center {
+  opacity:0.7;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+svg polygon.center:hover {
+  opacity:0.2;
+}
+
+#startText {
+  font-family: 'Turret Road', cursive;
+  font-weight: 700;
+  fill:#fff;
+  user-select: none;
+  pointer-events: none;
+}
+
+#restartText {
+  font-family: 'Turret Road', cursive;
+  font-weight: 700;
+  fill:rgb(255, 255, 255);
+  user-select: none;
+  pointer-events: none;
+  opacity: 0;
+}
