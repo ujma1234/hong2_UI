@@ -22,8 +22,26 @@ const fromTopButton = document.getElementById("box2");
 
 
 fromLeftButton.addEventListener("click", e=>{
+    document.getElementById("ct1").className = "container1_no";
+    document.getElementById("ct2").className = "container2_no";
+    document.getElementById("ct3").className = "container3_no";
+    document.getElementById("ct4").className = "container4_no";
+    document.getElementById("ct5").className = "container5_no";
+    document.getElementById("ct6").className = "container6_no";
 
+    const timeout = setTimeout(()=>{
+        location.replace("upload.html");
+    }, 2500);
 });
 fromTopButton.addEventListener("click", e=>{
+    document.getElementById("ct1").className = "container1_yes";
+    document.getElementById("ct2").className = "container2_yes";
+    document.getElementById("ct3").className = "container3_yes";
+    document.getElementById("ct4").className = "container4_yes";
+    document.getElementById("ct5").className = "container5_yes";
+    document.getElementById("ct6").className = "container6_yes";
 
+    const timeout = setTimeout(()=>{
+        location.replace("index.html");
+    }, 2500);
 });

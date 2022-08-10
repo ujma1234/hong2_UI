@@ -11,7 +11,7 @@ btn_yes.addEventListener("click", e=>{
     document.getElementById("ct6").className = "container6_yes";
 
     const timeout = setTimeout(()=>{
-        location.replace("select_pic.html");
+        location.replace("loading.html");
     }, 2500);
 });
 
