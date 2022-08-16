@@ -37,4 +37,7 @@ next.addEventListener("click", e=>{
     const timeout3 = setTimeout(()=>{
         document.getElementById("bg").className = "bye_bg";
     },1000);
+    const timeout4 = setTimeout(()=>{
+        location.replace("game_intro.html");
+    },3000);
 });
