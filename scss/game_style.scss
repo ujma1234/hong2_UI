@@ -1,0 +1,132 @@
+@charset "UFT-8";
+@import "reset";
+
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #b1e1e2;
+
+    main{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .select_article {
+        position: absolute;
+        visibility: hidden;
+        width: 80vw;
+        height: 80vh;
+        left: 2vw;
+        top: 6vh;
+        border: 1px solid blue;
+        display: flex;
+        flex-wrap: wrap;
+
+        @for $i from 1 to 31 {
+                :nth-child(#{$i}) {
+                        width: 13vw;
+                        height: 12vh;
+                        margin: 1vh;
+                        cursor: pointer;
+                    .title{
+                        visibility: visible;
+                        width: 100%;
+                        height: 100%;
+                        padding: 1vh;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center ;
+                        font: 3vh "Jua";
+                        background: #eee;
+                        border-radius: 3vh;
+                        box-shadow: 3vh;
+                    }
+            }
+        }
+        .select1, .select2, .select3, .select4, .select5{
+            .title {
+                visibility: visible;
+                width: 100%;
+                height: 100%;
+                padding: 1vh;
+                display: flex;
+                align-items: center;
+                justify-content: center ;
+                font: 3vh "Jua";
+                background: #333;
+                border-radius: 3vh;
+                box-shadow: 3vh;
+            }
+        }
+    }
+
+    .explain {
+        width: 20vw;
+        height: 30vh;
+        position: absolute;
+        right: 3vw;
+        top: 10vh;
+        padding: 10px;
+        background: rgba(0,0,0,0.3);
+        color: #eee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font: 3.4vh "Jua";
+    }
+
+    .initial {
+        width: 20vw;
+        height: 10vh;
+        position: absolute;
+        right: 3vw;
+        top: 55vh;
+        background: rgba(238, 115, 238, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2vh;
+        font: 7vh "JUA";
+        cursor: pointer;
+    }
+
+    .next {
+        width: 20vw;
+        height: 10vh;
+        position: absolute;
+        right: 3vw;
+        top: 70vh;
+        background: rgba(115, 238, 115, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2vh;
+        font: 7vh "JUA";
+        cursor: pointer;
+    }
+
+    .warning {
+        position: absolute;
+        top: 30vh;
+        left: 10vw;
+        font: 10vh "jua";
+        background: #333;
+        color: rgb(237, 116, 136);
+        width: 80vw;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .off_warning {
+        visibility: hidden;
+    }
+
+    .off_explain, .off_next, .off_initial {
+        visibility: hidden;
+    }
+}
