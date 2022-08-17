@@ -14,3 +14,9 @@ wno.addEventListener("click", e=>{
         document.getElementById("wrn").className = "off_warning";
     },1500);
 });
+
+const yes = document.getElementById("yes");
+
+yes.addEventListener("click", e=>{
+    location.replace("game.html");
+});

@@ -255,6 +255,11 @@ next.addEventListener("click", e=>{
         },2000)
     }
     else {
-        document.querySelector(".explain").className = "off_explain"
+        document.querySelector(".explain").className = "off_explain";
+        document.querySelector(".next").className = "off_next";
+        document.querySelector(".initial").className = "off_initial";
+        document.querySelector(".select_article").className = "selected_article";
+
+        document.querySelector(".off").className = "on"
     }
 });

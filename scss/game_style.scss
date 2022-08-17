@@ -9,11 +9,6 @@ body {
     overflow: hidden;
     background: #b1e1e2;
 
-    main{
-        width: 100%;
-        height: 100vh;
-    }
-
     .select_article {
         position: absolute;
         visibility: hidden;
@@ -128,5 +123,40 @@ body {
 
     .off_explain, .off_next, .off_initial {
         visibility: hidden;
+    }
+    
+    .selected_article {
+        visibility: hidden;
+    }
+    .off {
+        visibility: hidden;
+    }
+
+    .on {
+        width: 100%;
+        height: 100vh;
+        
+        .bg {
+            position: absolute;
+            width: 80vw;
+            height: 70vh;
+            top: 0px;
+            left: 0px;
+            border: 1px solid red;
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .ground {
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            border: 1px solid black;
+            top: 65.8vh;
+        }
     }
 }
