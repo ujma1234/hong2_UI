@@ -260,6 +260,22 @@ next.addEventListener("click", e=>{
         document.querySelector(".initial").className = "off_initial";
         document.querySelector(".select_article").className = "selected_article";
 
-        document.querySelector(".off").className = "on"
+        document.querySelector(".off").className = "on";
+        const timeout1 = setTimeout(()=>{
+            document.querySelector(".off_hong2").className = "hong2";
+        },2000);
+
+        const timeout2 = setTimeout(()=>{
+            document.querySelector(".off_portal").className = "portal";
+        },7000);
+        const timeout3 = setTimeout(()=>{
+            document.querySelector(".hong2").className = "in_hong2";
+        },9000);
+        const timeout4 = setTimeout(()=>{
+            document.querySelector(".portal").className = "bye_portal";
+        },15000);
+        const timeout5 = setTimeout(()=>{
+            document.querySelector(".bye_portall").className = "off_portal";
+        },17000);
     }
 });

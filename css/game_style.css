@@ -688,8 +688,8 @@ body .on .bg {
   position: absolute;
   width: 80vw;
   height: 70vh;
-  top: 0px;
-  left: 0px;
+  top: 10vh;
+  left: 10vw;
   border: 1px solid red;
 }
 body .on .bg img {
@@ -698,12 +698,169 @@ body .on .bg img {
   height: 100%;
   object-fit: cover;
 }
-body .on .ground {
+body .on .boundary {
+  position: absolute;
+  width: 80vw;
+  height: 70vh;
+  top: 10vh;
+  left: 10vw;
+  overflow: hidden;
+}
+body .on .boundary .in_hong2 {
+  top: 50%;
+  left: 30%;
+  position: absolute;
+  width: 12%;
+  height: 14%;
+  z-index: 10;
+  animation: do_in linear 4s;
+  animation-fill-mode: forwards;
+}
+@keyframes do_in {
+  0% {
+    left: 30%;
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+  80% {
+    left: 52%;
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+  100% {
+    left: 52%;
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+}
+body .on .boundary .in_hong2 img {
   position: absolute;
   width: 100%;
-  height: 1px;
-  border: 1px solid black;
-  top: 65.8vh;
+  height: 100%;
+  object-fit: contain;
+}
+body .on .boundary .hong2 {
+  top: 50%;
+  left: -12%;
+  position: absolute;
+  width: 12%;
+  height: 14%;
+  animation: appearing linear 4s;
+  animation-fill-mode: forwards;
+}
+@keyframes appearing {
+  0% {
+    top: 45%;
+    left: -12%;
+  }
+  20% {
+    top: 50%;
+    left: -3.6%;
+  }
+  40% {
+    top: 55%;
+    left: 4.8%;
+  }
+  60% {
+    top: 50%;
+    left: 13.2%;
+  }
+  80% {
+    top: 45%;
+    left: 21.6%;
+  }
+  100% {
+    top: 50%;
+    left: 30%;
+  }
+}
+body .on .boundary .hong2 img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+body .on .boundary .off_hong2 {
+  visibility: hidden;
+}
+body .on .boundary .game_announce {
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 30%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .on .boundary .off_game_announce {
+  visibility: hidden;
+}
+body .on .boundary .off_portal {
+  visibility: hidden;
+}
+body .on .boundary .portal {
+  top: 45%;
+  left: 50%;
+  position: absolute;
+  width: 16%;
+  height: 24%;
+  z-index: 8;
+  opacity: 0;
+  animation: vanishIn 2s;
+  animation-fill-mode: forwards;
+}
+body .on .boundary .portal img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+body .on .boundary .bye_portal {
+  top: 45%;
+  left: 50%;
+  position: absolute;
+  width: 16%;
+  height: 24%;
+  z-index: 8;
+  opacity: 1;
+  animation: vanishOut 2s;
+  animation-fill-mode: forwards;
+}
+body .on .boundary .bye_portal img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@keyframes vanishIn {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(2, 2);
+    filter: blur(90px);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1, 1);
+    filter: blur(0px);
+  }
+}
+@keyframes vanishOut {
+  0% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1, 1);
+    filter: blur(0px);
+  }
+  100% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(2, 2);
+    filter: blur(20px);
+  }
 }
 
 /*# sourceMappingURL=game_style.css.map */
