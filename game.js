@@ -210,6 +210,7 @@ article30.addEventListener("click", e=>{
         i++;
     }
 });
+const skb1 = document.getElementById("skb1");
 
 const init = document.querySelector(".initial");
 init.addEventListener("click", e=>{
@@ -290,5 +291,15 @@ next.addEventListener("click", e=>{
             document.getElementById("1st_bg").className = "off_bg";
             document.getElementById("2nd_bg").className = "bg";
         },19000);
+        setTimeout(()=>{
+            document.querySelector(".off_book1_announce").className = "book1_announce";
+        },20000);
+        setTimeout(()=>{
+            skb1.className = "skill_book1";
+        },21000);
     }
+});
+
+skb1.addEventListener("click", e=>{
+    document.querySelector(".select1").className = "select_view";
 });

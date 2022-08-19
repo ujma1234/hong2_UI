@@ -41,7 +41,7 @@ body {
                     }
             }
         }
-        .select1, .select2, .select3, .select4, .select5{
+        .select1, .select2, .select3, .select4{
             .title {
                 visibility: visible;
                 width: 100%;
@@ -57,14 +57,7 @@ body {
             }
         }
 
-        .select_view {
-            position: absolute;
-            visibility: visible;
-        }
-
-        .select_hidden {
-            visibility: hidden;
-        }
+        
     }
 
     .explain {
@@ -136,6 +129,53 @@ body {
     
     .selected_article {
         visibility: hidden;
+
+        .select_view {
+            z-index: 10;
+            position: absolute;
+            visibility: visible;
+            width: 30vw;
+            height: 55vh;
+            top: 20vh;
+            left: 35vw;
+            background: rgba(255,255,255, 0.5);
+
+            .title {
+                width: 100%;
+                height: 30%;
+                padding: 3%;
+                font: 5vh "jua";
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 1px solid black;
+            }
+
+            .target {
+                width: 100%;
+                height: 20%;
+                padding: 3%;
+                font: 2vh "jua";
+            }
+
+            .contents {
+                width: 100%;
+                height: 35%;
+                padding: 3%;
+                font: 2vh "jua";
+            }
+
+            .howto {
+                width: 100%;
+                height: 10%;
+                padding: 3%;
+                font: 2vh "jua";
+            }
+        }
+
+        .select_hidden {
+            visibility: hidden;
+        }
     }
     .off {
         visibility: hidden;
@@ -342,12 +382,14 @@ body {
             }
 
             .skill_book1 {
+                z-index: 10;
                 position: absolute;
                 width: 30%;
                 height: 30%;
                 top: 70%;
                 left: 60%;
                 animation: bounce ease-in 2s infinite;
+                cursor: pointer;
 
                 @keyframes bounce {
                     0%{opacity: 1;}
@@ -374,6 +416,10 @@ body {
                 left: 5%;
                 font: 2vh "jua";
                 color: rgb(202, 233, 125);
+            }
+
+            .off_book1_announce {
+                visibility: hidden;
             }
         }
     }

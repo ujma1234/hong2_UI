@@ -600,7 +600,7 @@ body .select_article :nth-child(30) .title {
   border-radius: 3vh;
   box-shadow: 3vh;
 }
-body .select_article .select1 .title, body .select_article .select2 .title, body .select_article .select3 .title, body .select_article .select4 .title, body .select_article .select5 .title {
+body .select_article .select1 .title, body .select_article .select2 .title, body .select_article .select3 .title, body .select_article .select4 .title {
   visibility: visible;
   width: 100%;
   height: 100%;
@@ -612,13 +612,6 @@ body .select_article .select1 .title, body .select_article .select2 .title, body
   background: #333;
   border-radius: 3vh;
   box-shadow: 3vh;
-}
-body .select_article .select_view {
-  position: absolute;
-  visibility: visible;
-}
-body .select_article .select_hidden {
-  visibility: hidden;
 }
 body .explain {
   width: 20vw;
@@ -682,6 +675,47 @@ body .off_explain, body .off_next, body .off_initial {
   visibility: hidden;
 }
 body .selected_article {
+  visibility: hidden;
+}
+body .selected_article .select_view {
+  z-index: 10;
+  position: absolute;
+  visibility: visible;
+  width: 30vw;
+  height: 55vh;
+  top: 20vh;
+  left: 35vw;
+  background: rgba(255, 255, 255, 0.5);
+}
+body .selected_article .select_view .title {
+  width: 100%;
+  height: 30%;
+  padding: 3%;
+  font: 5vh "jua";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+body .selected_article .select_view .target {
+  width: 100%;
+  height: 20%;
+  padding: 3%;
+  font: 2vh "jua";
+}
+body .selected_article .select_view .contents {
+  width: 100%;
+  height: 35%;
+  padding: 3%;
+  font: 2vh "jua";
+}
+body .selected_article .select_view .howto {
+  width: 100%;
+  height: 10%;
+  padding: 3%;
+  font: 2vh "jua";
+}
+body .selected_article .select_hidden {
   visibility: hidden;
 }
 body .off {
@@ -904,12 +938,14 @@ body .on .boundary .off_skill_book1 {
   visibility: hidden;
 }
 body .on .boundary .skill_book1 {
+  z-index: 10;
   position: absolute;
   width: 30%;
   height: 30%;
   top: 70%;
   left: 60%;
   animation: bounce ease-in 2s infinite;
+  cursor: pointer;
 }
 @keyframes bounce {
   0% {
@@ -939,6 +975,9 @@ body .on .boundary .book1_announce {
   left: 5%;
   font: 2vh "jua";
   color: rgb(202, 233, 125);
+}
+body .on .boundary .off_book1_announce {
+  visibility: hidden;
 }
 
 @keyframes vanishIn {
