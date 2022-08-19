@@ -261,21 +261,34 @@ next.addEventListener("click", e=>{
         document.querySelector(".select_article").className = "selected_article";
 
         document.querySelector(".off").className = "on";
-        const timeout1 = setTimeout(()=>{
+        setTimeout(()=>{
             document.querySelector(".off_hong2").className = "hong2";
         },2000);
 
-        const timeout2 = setTimeout(()=>{
+        setTimeout(()=>{
+            document.querySelector(".off_game_announce").className = "game_announce";
+        },6000);
+
+        setTimeout(()=>{
             document.querySelector(".off_portal").className = "portal";
-        },7000);
-        const timeout3 = setTimeout(()=>{
+        },8000);
+        setTimeout(()=>{
             document.querySelector(".hong2").className = "in_hong2";
-        },9000);
-        const timeout4 = setTimeout(()=>{
+        },10000);
+        setTimeout(()=>{
+            document.querySelector(".game_announce").className = "bye_game_announce";
             document.querySelector(".portal").className = "bye_portal";
-        },15000);
-        const timeout5 = setTimeout(()=>{
-            document.querySelector(".bye_portall").className = "off_portal";
-        },17000);
+        },16000);
+        setTimeout(()=>{
+            document.querySelector(".bye_portal").className = "off_portal";
+            document.querySelector(".bye_game_announce").className = "off_game_announce";
+        },18000);
+        setTimeout(()=>{
+            document.querySelector('.off_black_bg').className = "change_bg";
+        },18000);
+        setTimeout(()=>{
+            document.getElementById("1st_bg").className = "off_bg";
+            document.getElementById("2nd_bg").className = "bg";
+        },19000);
     }
 });

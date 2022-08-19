@@ -613,6 +613,13 @@ body .select_article .select1 .title, body .select_article .select2 .title, body
   border-radius: 3vh;
   box-shadow: 3vh;
 }
+body .select_article .select_view {
+  position: absolute;
+  visibility: visible;
+}
+body .select_article .select_hidden {
+  visibility: hidden;
+}
 body .explain {
   width: 20vw;
   height: 30vh;
@@ -690,13 +697,41 @@ body .on .bg {
   height: 70vh;
   top: 10vh;
   left: 10vw;
-  border: 1px solid red;
 }
 body .on .bg img {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+body .on .off_bg {
+  visibility: hidden;
+}
+body .on .off_black_bg {
+  visibility: hidden;
+}
+body .on .change_bg {
+  z-index: 10;
+  position: absolute;
+  width: 80vw;
+  height: 70vh;
+  top: 10vh;
+  left: 10vw;
+  background: rgb(0, 0, 0);
+  animation: black linear 3s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+@keyframes black {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 body .on .boundary {
   position: absolute;
@@ -784,14 +819,29 @@ body .on .boundary .off_hong2 {
   visibility: hidden;
 }
 body .on .boundary .game_announce {
-  top: 10%;
-  left: 10%;
+  top: 0%;
+  left: 0%;
+  margin-top: 5%;
+  margin-left: 10%;
   width: 80%;
   height: 30%;
-  border: 1px solid red;
+  background: rgba(0, 0, 0, 0.3);
+  font: 5vh "jua";
+  color: rgb(202, 233, 125);
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  animation: announce linear 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes announce {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 body .on .boundary .off_game_announce {
   visibility: hidden;
@@ -816,6 +866,23 @@ body .on .boundary .portal img {
   height: 100%;
   object-fit: contain;
 }
+body .on .boundary .bye_game_announce {
+  top: 0%;
+  left: 0%;
+  margin-top: 5%;
+  margin-left: 10%;
+  width: 80%;
+  height: 30%;
+  background: rgba(0, 0, 0, 0.3);
+  font: 5vh "jua";
+  color: rgb(202, 233, 125);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  animation: vanishOut 2s;
+  animation-fill-mode: forwards;
+}
 body .on .boundary .bye_portal {
   top: 45%;
   left: 50%;
@@ -832,6 +899,46 @@ body .on .boundary .bye_portal img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+body .on .boundary .off_skill_book1 {
+  visibility: hidden;
+}
+body .on .boundary .skill_book1 {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  top: 70%;
+  left: 60%;
+  animation: bounce ease-in 2s infinite;
+}
+@keyframes bounce {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body .on .boundary .skill_book1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+body .on .boundary .book1_announce {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  width: 20%;
+  height: 20%;
+  top: 5%;
+  left: 5%;
+  font: 2vh "jua";
+  color: rgb(202, 233, 125);
 }
 
 @keyframes vanishIn {
