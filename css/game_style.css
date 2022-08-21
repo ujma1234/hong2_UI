@@ -748,6 +748,9 @@ body .selected_article .select_view .howto {
   display: flex;
   align-items: center;
 }
+body .selected_article .select_view .qz {
+  visibility: hidden;
+}
 body .selected_article .select_hidden {
   visibility: hidden;
 }
@@ -1005,7 +1008,7 @@ body .on .boundary .book1_announce {
   width: 20%;
   height: 20%;
   top: 5%;
-  left: 5%;
+  left: 2%;
   font: 2vh "jua";
   color: rgb(202, 233, 125);
 }
@@ -1052,15 +1055,23 @@ body .on .boundary .teacher img {
   object-fit: contain;
   cursor: pointer;
 }
+body .on .boundary .off_teacher {
+  visibility: hidden;
+}
 body .on .boundary .tenor {
   width: 100%;
   height: 100%;
+  top: 0px;
+  left: 0px;
   position: absolute;
 }
 body .on .boundary .tenor img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+body .on .boundary .off_tenor {
+  visibility: hidden;
 }
 
 @keyframes vanishIn {

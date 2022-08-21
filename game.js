@@ -302,4 +302,18 @@ next.addEventListener("click", e=>{
 
 skb1.addEventListener("click", e=>{
     document.querySelector(".select1").className = "select_view";
+    skb1.className = "off_skill_book1";
+
+    setTimeout(()=>{
+        document.getElementById("teacher1").className = "teacher";
+    },3000);
+});
+
+const teacher1 = document.getElementById("teacher1");
+
+teacher1.addEventListener("click", e=>{
+    document.querySelector(".off_tenor").className = "tenor";
+    teacher1.className = "off_teacher";
+    document.querySelector(".book1_announce").className = "off_book1_announce";
+    document.querySelector(".select_view").className = "select_hidden";
 });
