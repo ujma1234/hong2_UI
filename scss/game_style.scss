@@ -190,7 +190,7 @@ body {
             }
 
             .ht {
-                height: 10%;
+                height: 25%;
                 width: 20%;
                 font: 2vh "jua";
                 display: flex;
@@ -199,9 +199,8 @@ body {
             }
 
             .howto {
-                margin-bottom: 5%;
                 width: 80%;
-                height: 10%;
+                height: 25%;
                 padding: 2%;
                 font: 2vh "jua";
                 display: flex;
@@ -209,11 +208,189 @@ body {
             }
 
             .qz{
+                position: absolute;
                 visibility: hidden;
             }
         }
 
         .select_hidden {
+            visibility: hidden;
+        }
+
+        .select_qz {
+            visibility: hidden;
+            .qz {
+                z-index: 9;
+                visibility: visible;
+                position: absolute;
+                width: 60vw;
+                height: 50vh;
+                top: 25vh;
+                left: 20vw;
+                background: rgba(255,255,255,0.5);
+                opacity: 0;
+                animation: vanishIn 2s;
+                animation-fill-mode: forwards;
+                
+                .q {
+                    width: 100%;
+                    height: 60%;
+                    padding: 5%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font: 4vh "jua";
+                    color: #222;
+                }
+
+                .answer {
+                    width: 100%;
+                    height: 40%;
+                    display: flex;
+                    :nth-child(1) {
+                        z-index: 10;
+                        cursor: pointer;
+                        width: 50%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 5%;
+                        font: 4vh "jua";
+                        color: #333;
+                    }
+                    :nth-child(2) {
+                        z-index: 10;
+                        cursor: pointer;
+                        width: 50%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 5%;
+                        font: 4vh "jua";
+                        color: #333;
+                    } 
+                }
+            }
+        }
+
+        .select_out_qz {
+            visibility: hidden;
+            .qz {
+                z-index: 9;
+                visibility: visible;
+                position: absolute;
+                width: 60vw;
+                height: 50vh;
+                top: 25vh;
+                left: 20vw;
+                background: rgba(255,255,255,0.5);
+                opacity: 1;
+                animation: vanishOut 2s;
+                animation-fill-mode: forwards;
+                
+                .q {
+                    width: 100%;
+                    height: 60%;
+                    padding: 5%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font: 4vh "jua";
+                    color: #222;
+                }
+
+                .answer {
+                    width: 100%;
+                    height: 40%;
+                    display: flex;
+                    :nth-child(1) {
+                        z-index: 10;
+                        cursor: pointer;
+                        width: 50%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 5%;
+                        font: 4vh "jua";
+                        color: #333;
+                    }
+                    :nth-child(2) {
+                        z-index: 10;
+                        cursor: pointer;
+                        width: 50%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 5%;
+                        font: 4vh "jua";
+                        color: #333;
+                    } 
+                }
+            }
+        }
+
+        .select_blur_qz {
+            visibility: hidden;
+            .qz {
+                filter: blur(1vh);
+                z-index: 1;
+                visibility: visible;
+                position: absolute;
+                width: 60vw;
+                height: 50vh;
+                top: 25vh;
+                left: 20vw;
+                background: rgba(255,255,255,0.5);
+                opacity: 1;
+                
+                .q {
+                    width: 100%;
+                    height: 60%;
+                    padding: 5%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font: 4vh "jua";
+                    color: #222;
+                }
+
+                .answer {
+                    width: 100%;
+                    height: 40%;
+                    display: flex;
+                    :nth-child(1) {
+                        z-index: 10;
+                        cursor: pointer;
+                        width: 50%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 5%;
+                        font: 4vh "jua";
+                        color: #333;
+                    }
+                    :nth-child(2) {
+                        z-index: 10;
+                        cursor: pointer;
+                        width: 50%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 5%;
+                        font: 4vh "jua";
+                        color: #333;
+                    } 
+                }
+            }
+        }
+
+        .off_select {
             visibility: hidden;
         }
     }
@@ -523,6 +700,109 @@ body {
 
             .off_tenor {
                 visibility: hidden;
+            }
+
+            .off_qz_intro {
+                visibility: hidden;
+            }
+
+            .qz_intro {
+                position: absolute;
+                z-index: 10;
+                width: 80%;
+                height: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 10%;
+                left: 10%;
+                font: 35vh "jua";
+                opacity: 0;
+                color: antiquewhite;
+                animation: quiz_ 2s ease-in-out;
+                animation-fill-mode: forwards;
+                animation-delay: 4s;
+
+                @keyframes quiz_ {
+                    0%{opacity: 0;}
+                    30%{opacity: 1;}
+                    60%{opacity: 0;}
+                    70%{opacity: 1;}
+                    80%{opacity: 1;}
+                    90%{opacity: 1;}
+                    100%{opacity: 0;}
+                }
+            }
+
+            .off_cor {
+                visibility: hidden;
+            }
+
+            .cor{
+                position: absolute;
+                width: 80%;
+                height: 80%;
+                top: 10%;
+                left: 10%;
+                font: 20vh "jua";
+                color: rgb(202, 233, 125);
+                opacity: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                animation: ap1 4s linear;
+                animation-fill-mode: forwards;
+
+                @keyframes ap1 {
+                    0%{opacity: 0;}
+                    20%{opacity: 1;}
+                    80%{opacity: 1;}
+                    100%{opacity: 0;}
+                }
+            }
+
+            .off_wrg {
+                visibility: hidden;
+            }
+
+            .wrg {
+                position: absolute;
+                z-index: 10;
+                width: 80%;
+                height: 80%;
+                top: 10%;
+                left: 10%;
+                font: 10vh "jua";
+                color: red;
+                opacity: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                animation: ap1 4s linear;
+                animation-fill-mode: forwards;
+            }
+
+            .off_sill_get {
+                visibility: hidden;
+            }
+
+            .skill_get {
+                cursor: pointer;
+                z-index: 9;
+                position: absolute;
+                width: 40%;
+                height: 40%;
+                top: 30%;
+                left: 30%;
+                font: 10vh "jua";
+                background: rgb(202, 233, 125);
+                opacity: 0;
+                border-radius: 5vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                animation: vanishIn 1s;
+                animation-fill-mode: forwards;
             }
         }
     }

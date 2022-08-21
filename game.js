@@ -293,6 +293,7 @@ next.addEventListener("click", e=>{
         },19000);
         setTimeout(()=>{
             document.querySelector(".off_book1_announce").className = "book1_announce";
+            document.querySelector('.change_bg').className = "off_black_bg";
         },20000);
         setTimeout(()=>{
             skb1.className = "skill_book1";
@@ -313,7 +314,55 @@ const teacher1 = document.getElementById("teacher1");
 
 teacher1.addEventListener("click", e=>{
     document.querySelector(".off_tenor").className = "tenor";
+    document.querySelector(".off_qz_intro").className = "qz_intro";
     teacher1.className = "off_teacher";
     document.querySelector(".book1_announce").className = "off_book1_announce";
     document.querySelector(".select_view").className = "select_hidden";
+
+    setTimeout(()=>{
+        const answer = document.querySelector(".select_hidden");
+        answer.className = "select_qz";
+        document.querySelector(".qz_intro").className = "off_qz_intro";
+        
+    },6000);
+});
+
+const answer1 = document.querySelectorAll(".o");
+const answer2 = document.querySelectorAll(".x");
+
+var cnt = -1;
+
+for(let j = 0; j<answer1.length; j++) {
+    answer1[j].addEventListener("click",e=>{
+        document.querySelector(".select_qz").className = "select_out_qz";
+        cnt++;
+
+        setTimeout(()=>{
+            document.querySelector(".select_out_qz").className = "off_select";
+            document.querySelector(".off_cor").className = "cor";
+        },2000);
+
+        setTimeout(()=>{
+            document.querySelector(".cor").className = "off_cor";
+            document.getElementById("skill_get").className = "skill_get";
+        },6000);
+    });
+};
+
+for(let j=0; j<answer2.length; j++) {
+    answer2[j].addEventListener("click",e=>{
+        document.querySelector(".off_wrg").className = "wrg";
+        document.querySelector(".select_qz").className = "select_blur_qz";
+        setTimeout(()=>{
+            document.querySelector(".wrg").className = "off_wrg";
+            document.querySelector(".select_blur_qz").className = "select_qz";
+        },4000);
+    });
+}
+
+const skgt = document.getElementById("skill_get");
+skgt.addEventListener("click",e=>{
+    if(cnt==0) {
+        document.querySelector(".off_black_bg").className = "change_bg";
+    }
 });
