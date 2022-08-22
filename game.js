@@ -364,5 +364,32 @@ const skgt = document.getElementById("skill_get");
 skgt.addEventListener("click",e=>{
     if(cnt==0) {
         document.querySelector(".off_black_bg").className = "change_bg";
+        setTimeout(()=>{
+            document.querySelector(".tenor").className = "off_tenor";
+            document.getElementById("skill_get").className = "off_skill_get";
+            document.querySelector(".off_enemy_announce").className = "enemy_announce";
+        },1500);
+
+        setTimeout(()=>{
+            document.querySelector(".change_bg").className = "off_black_bg";
+            document.querySelector(".off_whoRU").className = "whoRU"
+        },3000);
     }
+});
+
+const fight1 = document.getElementById("enemy1_who");
+
+fight1.addEventListener("click", e=>{
+    document.querySelector(".off_black_bg").className = "change_bg";
+    document.querySelector(".whoRU").className = "off_whoRU";
+    document.querySelector(".enemy_announce").className = "off_enemy_announce";
+    setTimeout(()=>{
+        document.querySelector(".off_skill_announce").className = "skill_announce";
+    },1500);
+    setTimeout(()=>{
+        document.querySelector(".off_back_hong2").className = "back_hong2";
+        document.querySelector(".off_monster1").className = "monster1";
+        document.querySelector(".off_skill_list").className = "skill_list";
+        document.querySelector(".skill1").className = "skill1_active";
+    },3000);
 });

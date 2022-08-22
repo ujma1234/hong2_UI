@@ -639,6 +639,24 @@ body {
                 visibility: hidden;
             }
 
+            .off_enemy_announce {
+                visibility: hidden;
+            }
+
+            .enemy_announce {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: rgba(0,0,0,0.3);
+                width: 20%;
+                height: 20%;
+                top: 5%;
+                left: 2%;
+                font: 2vh "jua";
+                color: rgb(202, 233, 125);
+            }
+
             .off_teacher {
                 visibility: hidden;
             }
@@ -782,7 +800,7 @@ body {
                 animation-fill-mode: forwards;
             }
 
-            .off_sill_get {
+            .off_skill_get {
                 visibility: hidden;
             }
 
@@ -803,6 +821,163 @@ body {
                 align-items: center;
                 animation: vanishIn 1s;
                 animation-fill-mode: forwards;
+            }
+
+            .off_whoRU {
+                visibility: hidden;
+            }
+
+            .whoRU {
+                position: absolute;
+                cursor: pointer;
+                z-index: 10;
+                width: 40%;
+                height: 40%;
+                top: 50%;
+                left: -20%;
+                animation: enemy_moving ease-in-out 12s infinite;
+
+                @keyframes enemy_moving {
+                    0%{top: 50%;
+                        left: -20%;}
+                    10%{top: 50%;
+                        left: 20%}
+                    20%{top: 40%;
+                        left: 50%;}
+                    40%{top: 60%;
+                        left: 80%;}
+                    50%{top: 50%;
+                        left: 120%;}
+                    60%{top: 60%;
+                        left: 80%;}
+                    70%{top: 50%;
+                        left: 30%;}
+                    80%{top: 40%;
+                        left: 50%;}
+                    100%{top: 50%;
+                        left: -20%;}
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .off_back_hong2 {
+                visibility: hidden;
+            }
+
+            .back_hong2 {
+                position: absolute;
+                width: 40%;
+                height: 50%;
+                left: -40%;
+                top: 40%;
+                transform: rotateY(180deg);
+                animation: hong2_come 2s linear;
+                animation-fill-mode: forwards;
+
+                @keyframes hong2_come {
+                    0%{left: -40%;}
+                    100%{left: 10%;}
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .off_monster1 {
+                visibility: hidden;
+            }
+
+            .monster1 {
+                position: absolute;
+                border: 1px soild red;
+                width: 30%;
+                height: 30%;
+                top:0%;
+                right: -30%;
+                opacity: 1;
+                animation: monster_come 2s linear;
+                animation-fill-mode: forwards;
+
+                @keyframes monster_come {
+                    0%{right: -30%;}
+                    100%{right: 0%;}
+                }
+
+                @keyframes disappear {
+                    0%{filter: blur(0); opacity: 1;}
+                    100%{filter: blur(5vh); opacity: 0;
+                    transform: scale(3);}
+                }
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .off_skill_announce {
+                visibility: hidden;
+            }
+
+            .skill_announce {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: rgba(0,0,0,0.3);
+                width: 20%;
+                height: 20%;
+                top: 5%;
+                left: 2%;
+                font: 2vh "jua";
+                color: rgb(202, 233, 125);
+            }
+
+            .skill_list {
+                position: absolute;
+                width: 40%;
+                height: 40%;
+                bottom: 0%;
+                right: 0%;
+                opacity: 0;
+                background: rgba(255,255,255,0.3);
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 3%;
+                margin-right: 3%;
+                animation: puffIn 1s;
+                animation-delay: 2s;
+                animation-fill-mode: forwards;
+
+                .skill1, .skill2, .skill3, .skill4 {
+                    z-index: 3;
+                    width: 50%;
+                    height: 50%;
+                    border: 1px solid rgba(0,0,0,0.3);
+                    background: rgba(0,0,0,0.3);
+                    display: none;
+                }
+
+                .skill1_active {
+                    z-index: 10;
+                    width: 50%;
+                    height: 50%;
+                    border: 1px solid rgba(0,0,0,0.3);
+                    background: rgba(0,0,0,0.3);
+                    font: 4vh "jua";
+                    color: #222;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
         }
     }
@@ -837,3 +1012,19 @@ body {
     filter: blur(20px);
 }
 }
+
+@keyframes puffIn {
+    0% {
+      opacity: 0;
+      transform-origin: 50% 50%;
+      transform: scale(2, 2);
+      filter: blur(2px);
+    }
+    100% {
+      opacity: 1;
+      transform-origin: 50% 50%;
+      transform: scale(1, 1);
+      filter: blur(0px);
+    }
+  }
+  
