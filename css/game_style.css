@@ -1241,19 +1241,19 @@ body .on .boundary .teacher img {
 body .on .boundary .off_teacher {
   visibility: hidden;
 }
-body .on .boundary .tenor {
+body .on .boundary .tenor1, body .on .boundary .tenor2, body .on .boundary .tenor3, body .on .boundary .tenor4 {
   width: 100%;
   height: 100%;
   top: 0px;
   left: 0px;
   position: absolute;
 }
-body .on .boundary .tenor img {
+body .on .boundary .tenor1 img, body .on .boundary .tenor2 img, body .on .boundary .tenor3 img, body .on .boundary .tenor4 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-body .on .boundary .off_tenor {
+body .on .boundary .off_tenor1, body .on .boundary .off_tenor2, body .on .boundary .off_tenor3, body .on .boundary .off_tenor4 {
   visibility: hidden;
 }
 body .on .boundary .off_qz_intro {
@@ -1642,6 +1642,45 @@ body .on .boundary .skill_list .skill1_active {
   justify-content: center;
   align-items: center;
 }
+body .on .boundary .skill_list .skill2_active {
+  cursor: pointer;
+  z-index: 10;
+  width: 50%;
+  height: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.3);
+  font: 4vh "jua";
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .on .boundary .skill_list .skill3_active {
+  cursor: pointer;
+  z-index: 10;
+  width: 50%;
+  height: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.3);
+  font: 4vh "jua";
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .on .boundary .skill_list .skill4_active {
+  cursor: pointer;
+  z-index: 10;
+  width: 50%;
+  height: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.3);
+  font: 4vh "jua";
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 body .on .boundary .off_brush {
   visibility: hidden;
 }
@@ -1690,7 +1729,7 @@ body .on .boundary .brush img {
   width: 100%;
   object-fit: contain;
 }
-body .on .boundary .off_clear_announce {
+body .on .boundary .off_clear_announce, body .on .boundary .off_clear_announce2, body .on .boundary .off_clear_announce3, body .on .boundary .off_clear_announce4 {
   visibility: hidden;
 }
 body .on .boundary .clear_announce {
@@ -1762,6 +1801,72 @@ body .on .boundary .blur_bg {
   opacity: 0;
   animation: fadein 1s linear;
   animation-fill-mode: forwards;
+}
+body .on .boundary .off_metor1, body .on .boundary .off_metor2 {
+  visibility: hidden;
+}
+body .on .boundary .metor1 {
+  z-index: 15;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+body .on .boundary .metor1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body .on .boundary .metor2 {
+  z-index: 15;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  opacity: 1;
+  animation: fadeout 1.5s linear;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+body .on .boundary .metor2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body .on .boundary .off_th1, body .on .boundary .off_th2, body .on .boundary .off_th3 {
+  visibility: hidden;
+}
+body .on .boundary .th1, body .on .boundary .th2 {
+  z-index: 15;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+body .on .boundary .th1 img, body .on .boundary .th2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body .on .boundary .th3 {
+  z-index: 15;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  opacity: 1;
+  animation: fadeout 2s linear;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+body .on .boundary .th3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @keyframes fadeout {

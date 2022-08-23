@@ -702,7 +702,7 @@ body {
                 visibility: hidden;
             }
 
-            .tenor {
+            .tenor1, .tenor2, .tenor3, .tenor4 {
                 width: 100%;
                 height: 100%;
                 top: 0px;
@@ -716,7 +716,7 @@ body {
                 }
             }
 
-            .off_tenor {
+            .off_tenor1, .off_tenor2, .off_tenor3, .off_tenor4 {
                 visibility: hidden;
             }
 
@@ -1075,6 +1075,45 @@ body {
                     justify-content: center;
                     align-items: center;
                 }
+                .skill2_active {
+                    cursor: pointer;
+                    z-index: 10;
+                    width: 50%;
+                    height: 50%;
+                    border: 1px solid rgba(0,0,0,0.3);
+                    background: rgba(0,0,0,0.3);
+                    font: 4vh "jua";
+                    color: #222;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .skill3_active {
+                    cursor: pointer;
+                    z-index: 10;
+                    width: 50%;
+                    height: 50%;
+                    border: 1px solid rgba(0,0,0,0.3);
+                    background: rgba(0,0,0,0.3);
+                    font: 4vh "jua";
+                    color: #222;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .skill4_active {
+                    cursor: pointer;
+                    z-index: 10;
+                    width: 50%;
+                    height: 50%;
+                    border: 1px solid rgba(0,0,0,0.3);
+                    background: rgba(0,0,0,0.3);
+                    font: 4vh "jua";
+                    color: #222;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
 
             .off_brush {
@@ -1130,7 +1169,7 @@ body {
                 }
             }
 
-            .off_clear_announce {
+            .off_clear_announce, .off_clear_announce2, .off_clear_announce3, .off_clear_announce4 {
                 visibility: hidden;
             }
 
@@ -1200,6 +1239,82 @@ body {
 
                 animation: fadein 1s linear;
                 animation-fill-mode: forwards;
+            }
+
+            .off_metor1, .off_metor2 {
+                visibility: hidden;
+            }
+
+            .metor1 {
+                z-index: 15;
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                left: 0px;
+                position: absolute;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .metor2 {
+                z-index: 15;
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                left: 0px;
+                position: absolute;
+                opacity: 1;
+                animation: fadeout 1.5s linear;
+                animation-delay: 2s;
+                animation-fill-mode: forwards;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .off_th1, .off_th2, .off_th3 {
+                visibility: hidden;
+            }
+
+            .th1, .th2 {
+                z-index: 15;
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                left: 0px;
+                position: absolute;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .th3 {
+                z-index: 15;
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                left: 0px;
+                position: absolute;
+                opacity: 1;
+                animation: fadeout 2s linear;
+                animation-delay: 3s;
+                animation-fill-mode: forwards;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
         }
     }
