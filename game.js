@@ -391,5 +391,40 @@ fight1.addEventListener("click", e=>{
         document.querySelector(".off_monster1").className = "monster1";
         document.querySelector(".off_skill_list").className = "skill_list";
         document.querySelector(".skill1").className = "skill1_active";
+        document.querySelector(".change_bg").className = "off_black_bg";
     },3000);
+});
+
+const skill_1 = document.getElementById("sk1");
+
+skill_1.addEventListener("click", e=>{
+    document.querySelector(".skill_announce").className = "bye_skill_announce";
+    document.querySelector(".skill_list").className = "bye_skill_list";
+
+    setTimeout(()=>{
+        document.querySelector(".back_hong2").className = "back_hong2_attack";
+        document.querySelector(".off_brush").className = "brush";
+    },2000);
+    
+
+    setTimeout(()=>{
+        document.querySelector(".brush").className = "off_brush";
+        document.querySelector(".monster1").className = "bye_monster1";
+        document.querySelector(".bye_skill_announce").className = "off_skill_announce";
+        document.querySelector(".bye_skill_list").className = "off_skill_list";
+    },7500);
+
+    setTimeout(()=>{
+        document.querySelector(".bye_monster1").className = "off_monster1";
+        document.querySelector(".off_blur_bg").className = "blur_bg";
+        document.querySelector(".off_clear_announce").className = "clear_announce";
+        document.querySelector(".off_stage2_go").className = "stage2_go";
+    },9500);
+});
+
+const stage2 = document.getElementById("stage2");
+
+stage2.addEventListener("click", e=>{
+    document.querySelector(".off_black_bg").className = "change_bg";
+    
 });
