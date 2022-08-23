@@ -402,6 +402,20 @@ skgt.addEventListener("click",e=>{
             document.getElementById("enemy3_who").className = "whoRU"
         },3000);
     }
+
+    if(cnt==3) {
+        document.querySelector(".off_black_bg").className = "change_bg";
+        setTimeout(()=>{
+            document.querySelector(".tenor4").className = "off_tenor4";
+            document.getElementById("skill_get").className = "off_skill_get";
+            document.querySelector(".off_enemy_announce").className = "enemy_announce";
+        },1500);
+
+        setTimeout(()=>{
+            document.querySelector(".change_bg").className = "off_black_bg";
+            document.querySelector(".off_whoRU").className = "whoRU"
+        },3000);
+    }
 });
 
 const fight1 = document.getElementById("enemy1_who");
@@ -676,3 +690,121 @@ skill_3.addEventListener("click", e=>{
     },17000);
 });
 
+const stage4 = document.getElementById("stage4");
+
+stage4.addEventListener("click",e=>{
+    document.querySelector(".off_black_bg").className = "change_bg";
+    setTimeout(()=>{
+        document.getElementById("4st_bg").className = "off_bg";
+        document.getElementById("5st_bg").className = "bg";
+        document.querySelector(".blur_bg").className = "off_blur_bg";
+        document.querySelector(".clear_announce").className = "off_clear_announce";
+        document.querySelector(".stage2_go").className = "off_stage2_go";
+        document.querySelector(".back_hong2_attack").className = "off_back_hong2";
+        document.querySelector(".off_book1_announce").className = "book1_announce";
+        document.getElementById("skb4").className = "skill_book1";
+    },1200);
+});
+
+const skb4 = document.getElementById("skb4");
+
+skb4.addEventListener("click",e=>{
+    document.querySelector(".select4").className = "select_view";
+    skb4.className = "off_skill_book1";
+    document.querySelector(".change_bg").className = "off_black_bg";
+
+    setTimeout(()=>{
+        document.getElementById("teacher4").className = "teacher";
+    });
+});
+
+const teacher4 = document.getElementById("teacher4");
+
+teacher4.addEventListener("click",e=>{
+    document.querySelector(".off_tenor4").className = "tenor4";
+    document.querySelector(".off_qz_intro").className = "qz_intro";
+    teacher4.className = "off_teacher";
+    document.querySelector(".book1_announce").className = "off_book1_announce";
+    document.querySelector(".select_view").className = "select_hidden";
+
+    setTimeout(()=>{
+        const answer = document.querySelector(".select_hidden");
+        answer.className = "select_qz";
+        document.querySelector(".qz_intro").className = "off_qz_intro";
+        
+    },6000);
+});
+
+const fight4 = document.getElementById("enemy4_who");
+
+fight4.addEventListener("click",e=>{
+    document.querySelector(".off_black_bg").className = "change_bg";
+    document.querySelector(".whoRU").className = "off_whoRU";
+    document.querySelector(".enemy_announce").className = "off_enemy_announce";
+    setTimeout(()=>{
+        document.querySelector(".off_skill_announce").className = "skill_announce";
+    },1500);
+    setTimeout(()=>{
+        document.querySelector(".off_back_hong2").className = "back_hong2";
+        document.getElementById("monster4").className = "monster1";
+        document.querySelector(".off_skill_list").className = "skill_list";
+        document.querySelector(".skill4").className = "skill4_active";
+        document.querySelector(".change_bg").className = "off_black_bg";
+    },3000);
+});
+
+const skill_4 = document.getElementById("sk4");
+
+skill_4.addEventListener("click",e=>{
+    document.querySelector(".skill_announce").className = "bye_skill_announce";
+    document.querySelector(".skill_list").className = "bye_skill_list";
+
+    setTimeout(()=>{
+        document.querySelector(".back_hong2").className = "back_hong2_attack";
+    },2000);
+
+    setTimeout(()=>{
+        document.querySelector(".off_dr1").className = "dr1";
+    },3000);
+
+    setTimeout(()=>{
+        document.querySelector(".dr1").className = "off_dr1"
+        document.querySelector(".off_dr2").className = "dr2";
+        document.querySelector(".bye_skill_list").className = "off_skill_list";
+        document.querySelector(".bye_skill_announce").className = "off_skill_announce";
+    },4500);
+
+    setTimeout(()=>{
+        document.querySelector(".dr2").className = "off_dr2"
+        document.querySelector(".off_dr3").className = "dr3";
+    },9000);
+
+    setTimeout(()=>{
+        document.querySelector(".dr3").className = "off_dr3"
+        document.querySelector(".off_dr4").className = "dr4";
+    },11000);
+
+    setTimeout(()=>{
+        document.querySelector(".dr4").className = "off_dr4"
+    },14000);
+
+    setTimeout(()=>{
+        document.querySelector(".monster1").className = "bye_monster1";
+    },15000);
+
+    setTimeout(()=>{
+        document.querySelector(".bye_monster1").className = "off_monster1";
+        document.querySelector(".off_blur_bg").className = "blur_bg";
+        document.querySelector(".off_stage2_go").className = "stage2_go";
+        if(cnt==0)
+            document.querySelector(".off_clear_announce").className = "clear_announce";
+        else if(cnt==1)
+            document.querySelector(".off_clear_announce2").className = "clear_announce";
+        else if(cnt==2)
+            document.querySelector(".off_clear_announce3").className = "clear_announce";
+        else 
+            document.querySelector(".off_clear_announce4").className = "clear_announce";
+    },16000);
+});
+
+const final = document.getElementById("final");

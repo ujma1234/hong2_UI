@@ -1868,6 +1868,39 @@ body .on .boundary .th3 img {
   height: 100%;
   object-fit: cover;
 }
+body .on .boundary .off_dr1, body .on .boundary .off_dr2, body .on .boundary .off_dr3, body .on .boundary .off_dr4 {
+  visibility: hidden;
+}
+body .on .boundary .dr1, body .on .boundary .dr2, body .on .boundary .dr3 {
+  z-index: 15;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+body .on .boundary .dr1 img, body .on .boundary .dr2 img, body .on .boundary .dr3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body .on .boundary .dr4 {
+  z-index: 15;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  opacity: 1;
+  animation: fadeout 1.5s linear;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+body .on .boundary .dr4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 @keyframes fadeout {
   0% {
