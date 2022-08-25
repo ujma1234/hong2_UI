@@ -413,7 +413,7 @@ skgt.addEventListener("click",e=>{
 
         setTimeout(()=>{
             document.querySelector(".change_bg").className = "off_black_bg";
-            document.querySelector(".off_whoRU").className = "whoRU"
+            document.getElementById("enemy4_who").className = "whoRU"
         },3000);
     }
 });
