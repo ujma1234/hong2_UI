@@ -9,6 +9,25 @@ body {
     overflow: hidden;
     background: #b1e1e2;
 
+    .container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        z-index: 15;
+        background: #b1e1e2;
+        animation: container_apr 1.5s linear;
+        animation-fill-mode: forwards;
+        @keyframes container_apr {
+            0%{opacity: 1;}
+            100%{opacity: 0;}
+        }
+    }
+
+    .off_container {
+        visibility: hidden;
+    }
+
     .select_article {
         position: absolute;
         visibility: hidden;
@@ -424,6 +443,8 @@ body {
         .off_black_bg {
             visibility: hidden;
         }
+
+        
 
         .change_bg {
             z-index: 10;
@@ -1352,6 +1373,79 @@ body {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                }
+            }
+
+            .off_change_gif {
+                visibility: hidden;
+            }
+    
+            .change_gif{
+                z-index: 20;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                background: rgb(0,0,0);
+                animation: black2 linear 1s;
+                opacity: 0;
+                animation-fill-mode: forwards;
+
+                @keyframes black2 {
+                    0%{opacity: 0;}
+                    50%{opacity: 1;}
+                    100%{opacity: 0;}
+                }
+            }
+
+            .off_finish{
+                visibility: hidden;
+            }
+
+            .finish {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                background: #000;
+                z-index: 15;
+
+                .fin_announce {
+                    position: absolute;
+                    width: 80%;
+                    height: 50%;
+                    left: 10%;
+                    top: 10%;
+                    font: 7vh "jua";
+                    color: #b1e1e2;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 0;
+                    animation:fadein 2s linear;
+                    animation-delay: 2s;
+                    animation-fill-mode: forwards;
+                }
+
+                .go_next {
+                    cursor: pointer;
+                    width: 30%;
+                    height: 20%;
+                    font: 3vh "jua";
+                    top: 55%;
+                    left: 35%;
+                    position: absolute;
+                    background: #c4ee86;
+                    border-radius: 5vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 0;
+                    animation:fadein 2s linear;
+                    animation-delay: 2s;
+                    animation-fill-mode: forwards;
                 }
             }
         }

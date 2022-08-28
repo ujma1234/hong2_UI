@@ -1,3 +1,8 @@
+setTimeout(()=>{
+    document.querySelector(".container").className = "off_container";
+},1500);
+
+
 const article1 = document.querySelector(".article1");
 const article2 = document.querySelector(".article2");
 const article3 = document.querySelector(".article3");
@@ -820,12 +825,17 @@ skill_2.addEventListener("click", e=>{
     },3000);
 
     setTimeout(()=>{
+        document.querySelector(".off_change_gif").className = "change_gif";
+    },7500);
+
+    setTimeout(()=>{
         document.querySelector(".metor1").className = "off_metor1";
         document.querySelector(".off_metor2").className = "metor2";
     },8000);
 
     setTimeout(()=>{
         document.querySelector(".metor2").className = "off_metor2";
+        document.querySelector(".change_gif").className = "off_change_gif";
     },11000);
 
     setTimeout(()=>{
@@ -1037,6 +1047,10 @@ skill_4.addEventListener("click",e=>{
     },3000);
 
     setTimeout(()=>{
+        document.querySelector(".off_change_gif").className = "change_gif";
+    },4000);
+
+    setTimeout(()=>{
         document.querySelector(".dr1").className = "off_dr1"
         document.querySelector(".off_dr2").className = "dr2";
         document.querySelector(".bye_skill_list").className = "off_skill_list";
@@ -1044,9 +1058,25 @@ skill_4.addEventListener("click",e=>{
     },4500);
 
     setTimeout(()=>{
+        document.querySelector(".change_gif").className = "off_change_gif";
+    },5000);
+
+    setTimeout(()=>{
+        document.querySelector(".off_change_gif").className = "change_gif";
+    },8500);
+
+    setTimeout(()=>{
         document.querySelector(".dr2").className = "off_dr2"
         document.querySelector(".off_dr3").className = "dr3";
     },9000);
+
+    setTimeout(()=>{
+        document.querySelector(".change_gif").className = "off_change_gif";
+    },9500);
+
+    setTimeout(()=>{
+        document.querySelector(".off_change_gif").className = "change_gif";
+    },10500);
 
     setTimeout(()=>{
         document.querySelector(".dr3").className = "off_dr3"
@@ -1054,7 +1084,8 @@ skill_4.addEventListener("click",e=>{
     },11000);
 
     setTimeout(()=>{
-        document.querySelector(".dr4").className = "off_dr4"
+        document.querySelector(".dr4").className = "off_dr4";
+        document.querySelector(".change_gif").className = "off_change_gif";
     },14000);
 
     setTimeout(()=>{
@@ -1077,3 +1108,23 @@ skill_4.addEventListener("click",e=>{
 });
 
 const final = document.getElementById("final");
+
+final.addEventListener("click", e=>{
+    document.querySelector(".off_black_bg").className = "change_bg";
+
+    setTimeout(()=>{
+        document.querySelector(".off_finish").className = "finish";
+
+    },1500);
+
+    setTimeout(()=>{
+        document.querySelector(".change_bg").className = "off_black_bg";
+
+    },3000);
+});
+
+const nxt = document.getElementById("go_next");
+
+nxt.addEventListener("click",e=>{
+    location.replace("finish.html");
+});
