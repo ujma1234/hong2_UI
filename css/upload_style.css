@@ -76,7 +76,7 @@ body .container5 {
 }
 body .container6 {
   position: absolute;
-  top: 85vh;
+  top: 84vh;
   left: 0vw;
   width: 100%;
   height: 20vh;
@@ -181,11 +181,15 @@ body main .hong2 {
   margin-top: 30vh;
   left: 50vw;
   margin-left: -20vh;
-  border: 1px solid red;
   transform: scale(1.4);
   opacity: 1;
   animation: hong2 linear 2s;
   animation-fill-mode: forwards;
+}
+body main .hong2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 @keyframes hong2 {
   0% {
@@ -253,6 +257,7 @@ body main .btn {
   width: 40vh;
   height: 15vh;
   background: rgba(255, 255, 255, 0.9);
+  border-radius: 5vh;
   animation: boingInUp 1s;
   font: 5vh "Jua";
   align-items: center;
@@ -298,6 +303,7 @@ body main .off_display {
     margin-top: 10vh;
     width: 90vh;
     left: 5vh;
+    border: 1vh solid black;
   }
 }
 @keyframes boingInUp {

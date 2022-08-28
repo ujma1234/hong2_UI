@@ -31,180 +31,449 @@ const article30 = document.querySelector(".article30");
 
 var i = 1;
 article1.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article1)
+        i--;
+    else if (document.querySelector(".select2") == article1)
+        i--;
+    else if (document.querySelector(".select3") == article1)
+        i--;
+    else if (document.querySelector(".select4") == article1)
+        i--;
     if(i<5) {
         article1.className = "select"+i.toString();
         i++;
     }
 });
 article2.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article2)
+        i--;
+    else if (document.querySelector(".select2") == article2)
+        i--;
+    else if (document.querySelector(".select3") == article2)
+        i--;
+    else if (document.querySelector(".select4") == article2)
+        i--;
+
     if(i<5) {
         article2.className = "select"+i.toString();
         i++;
     }
 });
 article3.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article3)
+        i--;
+    else if (document.querySelector(".select2") == article3)
+        i--;
+    else if (document.querySelector(".select3") == article3)
+        i--;
+    else if (document.querySelector(".select4") == article3)
+        i--;
+
     if(i<5) {
         article3.className = "select"+i.toString();
         i++;
     }
 });
 article4.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article4)
+        i--;
+    else if (document.querySelector(".select2") == article4)
+        i--;
+    else if (document.querySelector(".select3") == article4)
+        i--;
+    else if (document.querySelector(".select4") == article4)
+        i--;
+
     if(i<5) {
         article4.className = "select"+i.toString();
         i++;
     }
 });
 article5.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article5)
+        i--;
+    else if (document.querySelector(".select2") == article5)
+        i--;
+    else if (document.querySelector(".select3") == article5)
+        i--;
+    else if (document.querySelector(".select4") == article5)
+        i--;
+
     if(i<5) {
         article5.className = "select"+i.toString();
         i++;
     }
 });
 article6.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article6)
+        i--;
+    else if (document.querySelector(".select2") == article6)
+        i--;
+    else if (document.querySelector(".select3") == article6)
+        i--;
+    else if (document.querySelector(".select4") == article6)
+        i--;
+
     if(i<5) {
         article6.className = "select"+i.toString();
         i++;
     }
 });
 article7.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article7)
+        i--;
+    else if (document.querySelector(".select2") == article7)
+        i--;
+    else if (document.querySelector(".select3") == article7)
+        i--;
+    else if (document.querySelector(".select4") == article7)
+        i--;
+
     if(i<5) {
         article7.className = "select"+i.toString();
         i++;
     }
 });
 article8.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article8)
+        i--;
+    else if (document.querySelector(".select2") == article8)
+        i--;
+    else if (document.querySelector(".select3") == article8)
+        i--;
+    else if (document.querySelector(".select4") == article8)
+        i--;
+
     if(i<5) {
         article8.className = "select"+i.toString();
         i++;
     }
 });
 article9.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article9)
+        i--;
+    else if (document.querySelector(".select2") == article9)
+        i--;
+    else if (document.querySelector(".select3") == article9)
+        i--;
+    else if (document.querySelector(".select4") == article9)
+        i--;
+
     if(i<5) {
         article9.className = "select"+i.toString();
         i++;
     }
 });
 article10.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article10)
+        i--;
+    else if (document.querySelector(".select2") == article10)
+        i--;
+    else if (document.querySelector(".select3") == article10)
+        i--;
+    else if (document.querySelector(".select4") == article10)
+        i--;
+
     if(i<5) {
         article10.className = "select"+i.toString();
         i++;
     }
 });
 article11.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article11)
+        i--;
+    else if (document.querySelector(".select2") == article11)
+        i--;
+    else if (document.querySelector(".select3") == article11)
+        i--;
+    else if (document.querySelector(".select4") == article11)
+        i--;
+
     if(i<5) {
         article11.className = "select"+i.toString();
         i++;
     }
 });
 article12.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article12)
+        i--;
+    else if (document.querySelector(".select2") == article12)
+        i--;
+    else if (document.querySelector(".select3") == article12)
+        i--;
+    else if (document.querySelector(".select4") == article12)
+        i--;
+
     if(i<5) {
         article12.className = "select"+i.toString();
         i++;
     }
 });
 article13.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article13)
+        i--;
+    else if (document.querySelector(".select2") == article13)
+        i--;
+    else if (document.querySelector(".select3") == article13)
+        i--;
+    else if (document.querySelector(".select4") == article13)
+        i--;
+
     if(i<5) {
         article13.className = "select"+i.toString();
         i++;
     }
 });
 article14.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article14)
+        i--;
+    else if (document.querySelector(".select2") == article14)
+        i--;
+    else if (document.querySelector(".select3") == article14)
+        i--;
+    else if (document.querySelector(".select4") == article14)
+        i--;
+
     if(i<5) {
         article14.className = "select"+i.toString();
         i++;
     }
 });
 article15.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article15)
+        i--;
+    else if (document.querySelector(".select2") == article15)
+        i--;
+    else if (document.querySelector(".select3") == article15)
+        i--;
+    else if (document.querySelector(".select4") == article15)
+        i--;
+
     if(i<5) {
         article15.className = "select"+i.toString();
         i++;
     }
 });
 article16.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article16)
+        i--;
+    else if (document.querySelector(".select2") == article16)
+        i--;
+    else if (document.querySelector(".select3") == article16)
+        i--;
+    else if (document.querySelector(".select4") == article16)
+        i--;
+
     if(i<5) {
         article16.className = "select"+i.toString();
         i++;
     }
 });
 article17.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article17)
+        i--;
+    else if (document.querySelector(".select2") == article17)
+        i--;
+    else if (document.querySelector(".select3") == article17)
+        i--;
+    else if (document.querySelector(".select4") == article17)
+        i--;
+
     if(i<5) {
         article17.className = "select"+i.toString();
         i++;
     }
 });
 article18.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article18)
+        i--;
+    else if (document.querySelector(".select2") == article18)
+        i--;
+    else if (document.querySelector(".select3") == article18)
+        i--;
+    else if (document.querySelector(".select4") == article18)
+        i--;
+
     if(i<5) {
         article18.className = "select"+i.toString();
         i++;
     }
 });
 article19.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article19)
+        i--;
+    else if (document.querySelector(".select2") == article19)
+        i--;
+    else if (document.querySelector(".select3") == article19)
+        i--;
+    else if (document.querySelector(".select4") == article19)
+        i--;
+
     if(i<5) {
         article19.className = "select"+i.toString();
         i++;
     }
 });
 article20.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article20)
+        i--;
+    else if (document.querySelector(".select2") == article20)
+        i--;
+    else if (document.querySelector(".select3") == article20)
+        i--;
+    else if (document.querySelector(".select4") == article20)
+        i--;
+
     if(i<5) {
         article20.className = "select"+i.toString();
         i++;
     }
 });
 article21.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article21)
+        i--;
+    else if (document.querySelector(".select2") == article21)
+        i--;
+    else if (document.querySelector(".select3") == article21)
+        i--;
+    else if (document.querySelector(".select4") == article21)
+        i--;
+
     if(i<5) {
         article21.className = "select"+i.toString();
         i++;
     }
 });
 article22.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article22)
+        i--;
+    else if (document.querySelector(".select2") == article22)
+        i--;
+    else if (document.querySelector(".select3") == article22)
+        i--;
+    else if (document.querySelector(".select4") == article22)
+        i--;
+
     if(i<5) {
         article22.className = "select"+i.toString();
         i++;
     }
 });
 article23.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article23)
+        i--;
+    else if (document.querySelector(".select2") == article23)
+        i--;
+    else if (document.querySelector(".select3") == article23)
+        i--;
+    else if (document.querySelector(".select4") == article23)
+        i--;
+
     if(i<5) {
         article23.className = "select"+i.toString();
         i++;
     }
 });
 article24.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article24)
+        i--;
+    else if (document.querySelector(".select2") == article24)
+        i--;
+    else if (document.querySelector(".select3") == article24)
+        i--;
+    else if (document.querySelector(".select4") == article24)
+        i--;
+
     if(i<5) {
         article24.className = "select"+i.toString();
         i++;
     }
 });
 article25.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article25)
+        i--;
+    else if (document.querySelector(".select2") == article25)
+        i--;
+    else if (document.querySelector(".select3") == article25)
+        i--;
+    else if (document.querySelector(".select4") == article25)
+        i--;
+
     if(i<5) {
         article25.className = "select"+i.toString();
         i++;
     }
 });
 article26.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article26)
+        i--;
+    else if (document.querySelector(".select2") == article26)
+        i--;
+    else if (document.querySelector(".select3") == article26)
+        i--;
+    else if (document.querySelector(".select4") == article26)
+        i--;
+
     if(i<5) {
         article26.className = "select"+i.toString();
         i++;
     }
 });
 article27.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article27)
+        i--;
+    else if (document.querySelector(".select2") == article27)
+        i--;
+    else if (document.querySelector(".select3") == article27)
+        i--;
+    else if (document.querySelector(".select4") == article27)
+        i--;
+
     if(i<5) {
         article27.className = "select"+i.toString();
         i++;
     }
 });
 article28.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article28)
+        i--;
+    else if (document.querySelector(".select2") == article28)
+        i--;
+    else if (document.querySelector(".select3") == article28)
+        i--;
+    else if (document.querySelector(".select4") == article28)
+        i--;
+
     if(i<5) {
         article28.className = "select"+i.toString();
         i++;
     }
 });
 article29.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article29)
+        i--;
+    else if (document.querySelector(".select2") == article29)
+        i--;
+    else if (document.querySelector(".select3") == article29)
+        i--;
+    else if (document.querySelector(".select4") == article29)
+        i--;
+
     if(i<5) {
         article29.className = "select"+i.toString();
         i++;
     }
 });
 article30.addEventListener("click", e=>{
+    if(document.querySelector(".select1") == article30)
+        i--;
+    else if (document.querySelector(".select2") == article30)
+        i--;
+    else if (document.querySelector(".select3") == article30)
+        i--;
+    else if (document.querySelector(".select4") == article30)
+        i--;
+
     if(i<5) {
         article30.className = "select"+i.toString();
         i++;

@@ -1,3 +1,8 @@
+const timeout_ = setTimeout(()=>{
+    document.getElementById("hong2").className = "hong2";
+},4000)
+
+
 const timeout = setTimeout(()=>{
     document.getElementById("text1").className = "off_text1";
     document.getElementById("text2").className = "off_text2";

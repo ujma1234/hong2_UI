@@ -128,11 +128,16 @@ body {
             margin-top: 30vh;
             left: 50vw;
             margin-left: -20vh;
-            border: 1px solid red;
             transform: scale(1.4);
             opacity: 1;
             animation: hong2 linear 2s;
             animation-fill-mode: forwards;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
         }
 
         @keyframes hong2 {
@@ -190,6 +195,7 @@ body {
             width: 40vh;
             height: 15vh;
             background: rgba(255, 255, 255, 0.9);
+            border-radius: 5vh;
             animation: boingInUp 1s;
             font: 5vh "Jua";
             align-items: center;
@@ -220,7 +226,9 @@ body {
             0% {width: 40vh;};
             30% {left:40vh;width: 1px;height: 15vh; margin-top: 42.5vh};
             31%{left:40vh; height: 80vh; margin-top: 10vh;width: 1px;}
-            100% {left:40vh; height: 80vh; margin-top: 10vh; width: 90vh; left: 5vh;}
+            100% {left:40vh; height: 80vh; margin-top: 10vh; width: 90vh; left: 5vh;
+            border: 1vh solid black;
+            }
         }
 
         @keyframes boingInUp {

@@ -18,5 +18,10 @@ wno.addEventListener("click", e=>{
 const yes = document.getElementById("yes");
 
 yes.addEventListener("click", e=>{
-    location.replace("game.html");
+    document.querySelector(".off_container").className = "container";
+
+    setTimeout(()=>{
+        location.replace("game.html");
+    },2000);
+    
 });
