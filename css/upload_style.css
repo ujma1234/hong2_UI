@@ -272,7 +272,7 @@ body main .display {
   margin-top: 42.5vh;
   margin-left: 50vw;
   position: absolute;
-  width: 40vh;
+  width: 30vh;
   height: 15vh;
   background: rgb(255, 255, 255);
   animation: display_1 linear 1s;
@@ -301,7 +301,7 @@ body main .off_display {
     left: 40vh;
     height: 80vh;
     margin-top: 10vh;
-    width: 90vh;
+    width: 80vh;
     left: 5vh;
     border: 1vh solid black;
   }
