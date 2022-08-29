@@ -254,6 +254,12 @@ body {
                 animation: box-move ease-in 1s;
                 animation-fill-mode: forwards;
                 animation-delay: 2.5s;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
             }
 
             @keyframes box-move {
@@ -279,10 +285,10 @@ body {
 
         .text1 {
             position: relative;
-            margin-top: 70vh;
+            margin-top: 3.5vh;
             text-align: center;
             font: 7vh/1 "Jua";
-            color: #444;
+            color: rgb(21, 22, 19);
             opacity: 0;
             z-index: 9;
             animation: blind linear 1s;
