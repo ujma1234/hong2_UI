@@ -984,7 +984,10 @@ body .on .change_bg {
   0% {
     opacity: 0;
   }
-  50% {
+  40% {
+    opacity: 1;
+  }
+  60% {
     opacity: 1;
   }
   100% {
@@ -1518,7 +1521,6 @@ body .on .boundary .off_monster1 {
 }
 body .on .boundary .monster1 {
   position: absolute;
-  border: 1px soild red;
   width: 30%;
   height: 30%;
   top: 0%;
@@ -1541,7 +1543,7 @@ body .on .boundary .monster1 {
     opacity: 1;
   }
   100% {
-    filter: blur(5vh);
+    filter: blur(500vh);
     opacity: 0;
     transform: scale(3);
   }
@@ -1553,7 +1555,6 @@ body .on .boundary .monster1 img {
 }
 body .on .boundary .bye_monster1 {
   position: absolute;
-  border: 1px soild red;
   width: 30%;
   height: 30%;
   top: 0%;
