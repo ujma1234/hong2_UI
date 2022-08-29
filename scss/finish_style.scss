@@ -301,6 +301,10 @@ body {
             align-items: center;
             border: 0.5vh solid black;
             background: rgba(255,255,255,0.7);
+            filter: blur(0.5vh);
+            animation: blur_off 1s linear;
+            animation-fill-mode: forwards;
+            cursor: pointer;
         }
     }
 }
