@@ -283,11 +283,15 @@ body main .img_box .duru1 {
   position: relative;
   width: 50%;
   height: 100%;
-  border: 1px solid blue;
   left: 0vh;
   animation: left-move ease-in 1s;
   animation-delay: 2.5s;
   animation-fill-mode: forwards;
+}
+body main .img_box .duru1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 @keyframes left-move {
   0% {
@@ -303,15 +307,26 @@ body main .img_box .box {
   top: 2.5vh;
   width: 0vw;
   height: 65vh;
-  background: #fff;
   animation: box-move ease-in 1s;
   animation-fill-mode: forwards;
   animation-delay: 2.5s;
 }
-body main .img_box .box img {
-  width: 100%;
-  height: 100%;
+body main .img_box .box .model {
+  z-index: 2;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
   object-fit: contain;
+}
+body main .img_box .box .duru_bg {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 95%;
+  top: 2.5%;
+  object-fit: fill;
 }
 @keyframes box-move {
   0% {
@@ -327,11 +342,15 @@ body main .img_box .duru2 {
   position: relative;
   width: 50%;
   height: 100%;
-  border: 1px solid blue;
   left: 0vh;
   animation: right-move ease-in 1s;
   animation-delay: 2.5s;
   animation-fill-mode: forwards;
+}
+body main .img_box .duru2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 @keyframes right-move {
   0% {

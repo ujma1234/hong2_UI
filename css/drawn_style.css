@@ -74,6 +74,7 @@ body main .img_box .img_b .hi {
   height: 80%;
   top: 5%;
   left: 10%;
+  object-fit: contain;
 }
 body main .img_box .img_b .duru_bg {
   width: 100%;
