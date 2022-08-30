@@ -33,10 +33,16 @@ btn.addEventListener("click", e=>{
 
 var myVideoStream = document.getElementById('myVideo')     // make it a global variable
   var myStoredInterval = 0
-  
+
 function getVideo(){
   navigator.getMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
-  navigator.getMedia({video: true, audio: false},
+
+  navigator.getMedia({
+    video: {
+        deviceId:"5d6e3d43a7a644214cfb2635cc12542378ff7a99a78abb9757dd8d8bb6138acd"
+    }, 
+    audio: false
+},
                      
     function(stream) {
       myVideoStream.srcObject = stream   
@@ -47,3 +53,18 @@ function getVideo(){
      alert('webcam not working');
   });
 }
+
+if (!navigator.mediaDevices?.enumerateDevices) {
+    console.log("enumerateDevices() not supported.");
+  } else {
+    // List cameras and microphones.
+    navigator.mediaDevices.enumerateDevices()
+      .then((devices) => {
+        devices.forEach((device) => {
+          console.log(`${device.kind}: ${device.label} id = ${device.deviceId}`);
+        });
+      })
+      .catch((err) => {
+        console.error(`${err.name}: ${err.message}`);
+      });
+  }

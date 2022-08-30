@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/upload_style.css">
     <script src="https://kit.fontawesome.com/048b034c7b.js" crossorigin="anonymous"></script>
-    <script defer src="upload.js"></script>	
+    <script defer src="upload.js"></script>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -24,8 +26,10 @@
         <div id="camera_box" class="off_btn" onclick="{getVideo()}">
           사진찍기
         </div>
+        
         <div id= "display" class="off_display">
           <video  id="myVideo" class="myVideo"></video>
+
         </div>
 
         <div id="txt" class="off_text">얼굴이 잘 보이도록 카메라로 가까이 오세요 !</div>
