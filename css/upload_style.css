@@ -301,12 +301,22 @@ body main .off_display {
     width: 1px;
     height: 15vh;
     margin-top: 42.5vh;
+    border: none;
   }
   31% {
     left: 40vh;
     height: 80vh;
     margin-top: 10vh;
     width: 1px;
+    border: none;
+  }
+  95%{
+    left: 40vh;
+    height: 80vh;
+    margin-top: 10vh;
+    width: 90vh;
+    left: 5vh;
+    border: none;
   }
   100% {
     left: 40vh;
